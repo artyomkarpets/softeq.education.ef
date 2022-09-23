@@ -1,9 +1,10 @@
 ﻿using MediatR;
+using TrialsSystem.UsersService.Infrastructure.Models.DeviceDtos;
 using TrialsSystem.UsersService.Infrastructure.Models.UserDTOs;
 
 namespace TrialsSystem.UsersService.Api.Application.Commands.DeviceCommands
 {
-    public class UpdateDeviceCommand : IRequest<UpdateUserResponse>
+    public class UpdateDeviceCommand : IRequest<DeviceResponse>
     {
         public UpdateDeviceCommand(string serialNumber,
             string model,
